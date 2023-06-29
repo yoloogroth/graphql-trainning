@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: adsoftsito
+  name: graphql-adsoftsito
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: adsoftsito
+      app: graphql-adsoftsito
   template:
     metadata:
       labels:
-        app: adsoftsito
+        app: graphql-adsoftsito
     spec:
       containers:
-      - image: okteto.dev/adsoftsito:latest
+      - image: okteto.dev/graphql-adsoftsito:latest
         name: adsoftsito
         envFrom:
         - configMapRef:
@@ -29,13 +29,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: adsoftsito
+  name: graphql-adsoftsito
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "adsoftsito"
+  - name: "graphql-adsoftsito"
     port: 8080
   selector:
-    app: adsoftsito
+    app: graphql-adsoftsito
