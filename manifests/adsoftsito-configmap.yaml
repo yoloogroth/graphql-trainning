@@ -5,7 +5,7 @@ metadata:
   labels:
     app: postgres
 data:
-  DEV_SECRET_KEY: i-love-adsoftsito-dev
+  DEV_SECRET_KEY: i-love-yoloogroth-dev
   DEV_DATABASE: yvcfkhqm
   DEV_USER: yvcfkhqm
   DEV_PASSWORD: a0qkncXy9LrUeFVMDUg7L4-II6anlKUP
