@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'hackernews.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'oeraliuz ',
-        'USER': 'oeraliuz ',
-        'PASSWORD': 'tQNoRuyikWOOsJU6OnhHvVfZoHHpn4j-',
+        'NAME': 'vzllrdbt',
+        'USER': 'vzllrdbt',
+        'PASSWORD': 'sLOtmyeouV6llZo74Q7AujQppVF-F3Gn',
         'HOST': 'chunee.db.elephantsql.com',
         'PORT': '5432',
     },
