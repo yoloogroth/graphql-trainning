@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: graphql-adsoftsito
+  name: graphql-yoloogroh
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: graphql-adsoftsito
+      app: graphql-yoloogroth
   template:
     metadata:
       labels:
-        app: graphql-adsoftsito
+        app: graphql-yoloogroth
     spec:
       containers:
-      - image: okteto.dev/graphql-adsoftsito:latest
-        name: adsoftsito
-        envFrom:
-        - configMapRef:
-            name: adsoftsito-config
+      - image: okteto.dev/yoloogroth:latest 
+        name: yoloogroth
+        #envFrom:
+        #- configMapRef:
+        #name: yoloogroth-config
         livenessProbe:
           httpGet:
             path: /ht/
@@ -29,13 +29,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: graphql-adsoftsito
+  name: graphql-yoloogroth
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "graphql-adsoftsito"
+  - name: "graphql-yoloogroth"
     port: 8080
   selector:
-    app: graphql-adsoftsito
+    app: graphql-yoloogroth

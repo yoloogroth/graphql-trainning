@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: adsoftsito-config
+  name: yoloogroth-config
   labels:
     app: postgres
 data:
